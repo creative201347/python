@@ -1,0 +1,51 @@
+Meta Characters
+[] A set of characters
+\ Signals a special sequence (can also be used to escape special characters)
+. Any character (except newline character)
+^ Starts with
+$ Ends with
+* Zero or more occurrences
++ One or more occurrences
+{} Exactly the specified number of occurrences
+| Either or
+() Capture and group
+Special Sequences
+\A Returns a match if the specified characters are at the beginning of the string
+\b Returns a match where the specified characters are at the beginning or at the end of a word r” ain\b.”
+\B Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
+
+\d Returns a match where the string contains digits (numbers from 0-9)
+\D Returns a match where the string DOES NOT contain digits
+\s Returns a match where the string contains a white space character
+\S Returns a match where the string DOES NOT contain a white space character
+\w Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)
+\W Returns a match where the string DOES NOT contain any word characters
+\Z Returns a match if the specified characters are at the end of the string
+
+
+- . - Any Character Except New Line
+- \d - Digit (0-9)
+- \D - Not a Digit (0-9)
+- \w - Word Character (a-z, A-Z, 0-9, \_)
+- \W - Not a Word Character
+- \s - Whitespace (space, tab, newline)
+- \S - Not Whitespace (space, tab, newline)
+
+- \b - Word Boundary
+- \B - Not a Word Boundary
+- ^ - Beginning of a String
+- $ - End of a String
+
+- [] - Matches Characters in brackets
+- [^ ] - Matches Characters NOT in brackets
+- | - Either Or
+- ( ) - Group
+
+Quantifiers:
+
+-       - 0 or More
+
+*       - 1 or More
+  ? - 0 or One
+  {3} - Exact Number
+  {3,4} - Range of Numbers (Minimum, Maximum)
